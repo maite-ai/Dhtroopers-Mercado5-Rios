@@ -1,0 +1,19 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "Clon de MercadoLibre",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pei.Dev",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
