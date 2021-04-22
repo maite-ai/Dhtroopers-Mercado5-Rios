@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <article class="form-container">
+            <form method="POST" action="#" class="edit-form">
+                <input type="text" placeholder="Nombre del producto" name="product-name" class="product-name" required></input>
+                <input type="number" placeholder="Precio en $" name="price" class="price" required></input>
+                <input type="text" placeholder="Descuento" name="discount" class="discount"></input>
+                <h3 class="titulito">Imagen de producto </h3>
+                <input type="file" name="product-pic" accept="image/*" class="product-pic"></input>
+                <div class="botones">
+                    <button type="submit" class="send-button"> Actualizar</button>
+                </div>
+            </form>
+        </article>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

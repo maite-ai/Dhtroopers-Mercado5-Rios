@@ -1,0 +1,15 @@
+<article class="tarjeta">
+    <a href="/products/<%= product.id %>" class="foto">
+        <img src="/images/<%= product.image %>" class="img" alt="<%= product.name %>" width="100%">
+    </a>
+    <div class="camion-detalle">
+        <div class="camion">
+            <i class="fas fa-truck"></i>
+        </div>
+        <div class="detalle">
+            <p class="precio">$ <%= product.price %></p>
+            <p class="descu"><%= product.descuento %> % off</p>
+            <p class="descrip"><%= product.name %></p>
+        </div>
+    </div>
+</article>

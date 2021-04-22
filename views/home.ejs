@@ -9,139 +9,21 @@
             <main>
                 <section class="ultima-visita">
                     <h2>Basado en tu última visita</h2>
+
                     <div class="contenedor-tarjetas">
-                        <article class="tarjeta">
-                            <div class="foto">
-                                <img src="images\img-cafetera-moulinex.jpg" class="img" alt="Cafetera Moulinex" width="100%">
-                            </div>
-                            <div class="camion-detalle">
-                                <div class="camion">
-                                    <i class="fas fa-truck"></i>
-                                </div>
-                                <div class="detalle">
-                                    <p class="precio">$6.770</p>
-                                    <p class="descu">40% off</p>
-                                    <p class="descrip">Cafetera Moulinex</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="tarjeta">
-                            <div class="foto">
-                                <img src="images\img-macbook-pro-2019.jpg" class="img" alt="Cafetera Moulinex" width="100%">
-                            </div>
-                            <div class="camion-detalle">
-                                <div class="camion">
-                                    <i class="fas fa-truck"></i>
-                                </div>
-                                <div class="detalle">
-                                    <p class="precio">$230.000</p>
-                                    <p class="descu">20% off</p>
-                                    <p class="descrip">MacBook Pro 2019</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="tarjeta">
-                            <div class="foto">
-                                <img src="images\img-samsung-galaxy-s10.jpg" class="img" alt="Cafetera Moulinex" width="100%">
-                            </div>
-                            <div class="camion-detalle">
-                                <div class="camion">
-                                    <i class="fas fa-truck"></i>
-                                </div>
-                                <div class="detalle">
-                                    <p class="precio">$70.500</p>
-                                    <p class="descu">10% off</p>
-                                    <p class="descrip">Samsung Galaxy S10</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="tarjeta">
-                            <div class="foto">
-                                <img src="images\img-tv-samsung-smart.jpg" class="img" alt="Cafetera Moulinex" width="100%">
-                            </div>
-                            <div class="camion-detalle">
-                                <div class="camion">
-                                    <i class="fas fa-truck"></i>
-                                </div>
-                                <div class="detalle">
-                                    <p class="precio">$23.200</p>
-                                    <p class="descu">5% off</p>
-                                    <p class="descrip">SmartTv Samsung 43"</p>
-                                </div>
-                            </div>
-                        </article>
+                        <% products.forEach(product => { %>
+                            <%- include('partials/product', { product }) %>
+                        <% })%>
                     </div>
                 </section>
-                <br>
+
                 <section>
                     <h2 id="ofertas">Ofertas</h2>
+
                     <div class="contenedor-tarjetas">
-                        <article class="tarjeta">
-                            <div class="foto">
-                                <img src="images\img-cafetera-moulinex.jpg" class="img" alt="Cafetera" width="100%">
-                            </div>
-                            <div class="camion-detalle">
-                                <div class="camion">
-                                    <i class="fas fa-truck"></i>
-                                </div>
-                                <div class="detalle">
-                                    <p class="precio">$6.770</p>
-                                    <p class="descu">40% off</p>
-                                    <p class="descrip">Cafetera Moulinex</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="tarjeta">
-                            <div class="foto">
-                                <img src="images\img-macbook-pro-2019.jpg" class="img" alt="Cafetera Moulinex" width="100%">
-                            </div>
-                            <div class="camion-detalle">
-                                <div class="camion">
-                                    <i class="fas fa-truck"></i>
-                                </div>
-                                <div class="detalle">
-                                    <p class="precio">$230.000</p>
-                                    <p class="descu">20% off</p>
-                                    <p class="descrip">MacBook Pro 2019</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="tarjeta">
-                            <div class="foto">
-                                <img src="images\img-samsung-galaxy-s10.jpg" class="img" alt="Cafetera Moulinex" width="100%">
-                            </div>
-                            <div class="camion-detalle">
-                                <div class="camion">
-                                    <i class="fas fa-truck"></i>
-                                </div>
-                                <div class="detalle">
-                                    <p class="precio">$70.500</p>
-                                    <p class="descu">10% off</p>
-                                    <p class="descrip">Samsung Galaxy S10</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="tarjeta">
-                            <div class="foto">
-                                <img src="images\img-tv-samsung-smart.jpg" class="img" alt="Cafetera Moulinex" width="100%">
-                            </div>
-                            <div class="camion-detalle">
-                                <div class="camion">
-                                    <i class="fas fa-truck"></i>
-                                </div>
-                                <div class="detalle">
-                                    <p class="precio">$23.200</p>
-                                    <p class="descu">5% off</p>
-                                    <p class="descrip">SmartTv Samsung 43"</p>
-                                </div>
-                            </div>
-                        </article>
+                        <% products.forEach(product => { %>
+                            <%- include('partials/product', { product }) %>
+                        <% })%>
                     </div>
                 </section>
             </main>
